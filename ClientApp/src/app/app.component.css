@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 50px;
+  }
+
+  .home{
+    background: blue;
+  }
+  
+  .background{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background: url('../assets/background.jpg') no-repeat transparent;
+    background-size: 100%;
+    width: 300px;
+    height: 180px;
+  
+  }
+
+
+}

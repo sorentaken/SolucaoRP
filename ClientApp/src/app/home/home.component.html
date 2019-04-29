@@ -1,0 +1,66 @@
+
+
+<img src="../assets/Portal_mercurio.png">
+<body background="../assets/background.jpg">
+<br>
+<h3>Função do portal</h3>
+<p> Nosso portal é um aplicativo que permite os nossos clientes calcular o preço dos disparos dos SMS,s
+  com base no numero de disparos</p>
+<br>
+<ul>
+  <hr />
+  <h2>Tabela de preço</h2>
+  <br>
+  <table class='table table-striped' cellSpacing=0 width="100%">
+    <tbody>
+      <tr>
+        <th align=left>Quantidade de SMS</th>
+        <th align=left>Preço</th>
+      </tr>
+      <tr>
+        <td>De 1 à 10:</td>
+        <td>R$ 1,50 por disparo</td>
+      </tr>
+      <tr>
+        <td>De 10 à 50</td>
+        <td>R$ 1,30 por disparo</td>
+      </tr>
+      <tr>
+        <td>De 50 à 100</td>
+        <td>R$ 1,10 por disparo</td>
+      </tr>
+      <tr>
+        <td>De 100 à 200</td>
+        <td>R$ 0,90 por disparo</td>
+      </tr>
+      <tr>
+        <td>De 200 à 500</td>
+        <td>R$ 0,75 por disparo</td>
+      </tr>
+      <tr>
+        <td>Acima de 500</td>
+        <td>R$ 0,50 por disparo</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+</ul>
+<p>Informe a quantidade de SMS</p>
+<div>Quantidade: <input [(ngModel)]="quantidade"></div>
+<p><button value="addRow" (click)="teste()">Adicionar</button></p>
+<hr />
+<h2>Resultados</h2>
+<br>
+<table class='home' cellSpacing=0 width="100%">
+  <tbody>
+    <tr>
+      <th align=left>Quantidade</th>
+      <th align=left>Valor</th>
+    </tr>
+    <tr *ngFor="let item of row; let i=index">
+      <td>{{quantidade}}</td>
+      <td>R${{valor}}</td>
+    </tr>
+  </tbody>
+</table>
+<br />
